@@ -36,5 +36,5 @@ for (let product of products) {
 container.innerHTML = productsHtml;
 
 container.addEventListener("click", function (e) {
-  console.log(e.target.id);
+  console.log(e.target.id); //fn take a parameter event which will listen for anyevent
 });
