@@ -3,7 +3,7 @@ import { catsData } from "./data.js";
 const emotionRadios = document.getElementById("emotion-radios");
 
 emotionRadios.addEventListener("change", function (e) {
-  console.log(e.target.id);
+  console.log(e.target.id); //change is an event on radio button
 });
 
 function getEmotionsArray(cats) {

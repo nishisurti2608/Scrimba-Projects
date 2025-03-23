@@ -36,5 +36,7 @@ for (let product of products) {
 container.innerHTML = productsHtml;
 
 container.addEventListener("click", function (e) {
-  console.log(e.target.id); //fn take a parameter event which will listen for anyevent
+  console.log(e.target.id); //fn take a parameter event which will listen for any event
+  document.getElementById(e.target.id).parentElement.style.backgroundColor =
+    "lightblue"; //Accessing parent element although it doesn't have any id
 });
